@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="1st" onclick="helloclick()">hello</h1>
+
+    <h1 id="2nd" onclick="seemore()">see more</h1>
+    <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta aliquid id natus deleniti vero impedit aliquam voluptas. Explicabo magni quasi quaerat! Nemo, expedita vitae aliquid illum maxime veniam tempore.</p>
+
+    <!--this is js-->
+    <script type="text/javascript">
+       // document.writeln("hello javascript world");
+       
+       function helloclick(){
+        document.getElementById("1st").innerHTML="change by js"
+        document.getElementById("1st").style.color="red"
+        
+       }
+       
+    //when click the see more text
+       document.getElementById("text").style.display="none"
+    function seemore(){
+        document.getElementById("text").style.display="block"
+    }
+    </script>
+</body>
+    <script src="./js/main.js"></script>
+</html>
