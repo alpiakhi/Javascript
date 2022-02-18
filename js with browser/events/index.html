@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="clickMeeToSeeDate()">click me to see date</button>
+
+
+  <script type="text/javascript">
+      let button = document.querySelector('button')
+
+      console.log(button)
+      function clickMeeToSeeDate(){
+          window.alert('i am click')
+      }
+
+  </script>
+
+
+  <input type="text" placeholder="type something" class ="text-field" onchange="onchangecontroller()">
+  <h1 id="text-result"></h1>
+
+  <script type = "text/javascript">
+      let input =document.querySelector('.text-field')
+     let h1 = document.querySelector('#text-result')
+
+     function  onchangecontroller(){
+        h1.innerHTML = input.value
+     }
+  </script>
+
+</body>
+</html>

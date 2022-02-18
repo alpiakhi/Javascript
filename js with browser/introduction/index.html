@@ -12,6 +12,18 @@
     <h1 id="2nd" onclick="seemore()">see more</h1>
     <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta aliquid id natus deleniti vero impedit aliquam voluptas. Explicabo magni quasi quaerat! Nemo, expedita vitae aliquid illum maxime veniam tempore.</p>
 
+
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button">Click me</button>
+
+    <p>JavaScript can change HTML attribute values</p>
+    <button>Turn on the light</button>
+
+    <img id ="myImage" src="pic_bulboff.gif" alt="pic_bulboff.gif" style="width:100px">
+
+    <button>Turn off the light</button>
+
+
     <!--this is js-->
     <script type="text/javascript">
        // document.writeln("hello javascript world");
@@ -27,6 +39,11 @@
     function seemore(){
         document.getElementById("text").style.display="block"
     }
+    //javascript can change html content...
+    document.getElementById("demo").innerHTML= "hello javascript!"
+
+    //JavaScript can change HTML attribute values....
+    document.getElementById("myImage".src='pic_bulboff.gif')
     </script>
 </body>
     <script src="./js/main.js"></script>
